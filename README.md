@@ -1,38 +1,26 @@
 # EcoSphere Intelligence: RAG Driven Framework
 
-Organized by ACM-W
+EcoSphere Intelligence is an advanced Retrieval-Augmented Generation (RAG) framework engineered to architect precision retrieval and eliminate hallucinations across complex, fragmented data ecosystems. 
 
-EcoSphere Intelligence is an advanced Retrieval-Augmented Generation (RAG) framework designed to deliver precise, grounded, and context-aware AI responses using enterprise and local document knowledge bases.
+It bridges the gap between static LLM knowledge weights and dynamic enterprise data pipelines.
 
-It bridges the gap between static LLM knowledge and dynamic real-world data pipelines by combining semantic retrieval with autoregressive text generation.
 
-⸻
+## Basics of RAG (Retrieval-Augmented Generation)
 
-Basics of RAG (Retrieval-Augmented Generation)
+RAG is a technique that combines *document retrieval* with *text generation*.
 
-RAG is an AI architecture that combines:
+Instead of answering only from what a model already knows, a RAG system:
+- First searches relevant information from uploaded documents  
+- Then uses that information as context to generate accurate answers  
 
-* Semantic document retrieval
-* Large Language Model (LLM) text generation
+This makes the chatbot:
+- More accurate  
+- Less likely to hallucinate  
+- Able to answer from private PDFs and documents  
+- Easy to update without retraining the model
 
-Instead of relying only on pre-trained model memory, the system:
 
-* Searches the most relevant information from uploaded documents
-* Retrieves semantically similar context chunks
-* Injects retrieved context into the LLM prompt
-* Generates grounded and verifiable responses
-
-This approach enables:
-
-* Higher factual accuracy
-* Reduced hallucinations
-* Real-time knowledge updates
-* Secure querying of private documents
-* No expensive model retraining
-
-⸻
-
-Technical Features & System Capabilities
+## Technical Features & System Capabilities
 
 * Multi-format document ingestion (TXT & PDF)
 * Semantic chunking pipeline with optimized token segmentation
@@ -44,9 +32,8 @@ Technical Features & System Capabilities
 * Local vector database persistence
 * Retrieval-first response architecture
 
-⸻
 
-System Workflow
+## System Workflow
 
 1. Upload documents (TXT/PDF)
 2. Extract and split document text into chunks
@@ -57,9 +44,8 @@ System Workflow
 7. Send retrieved context to the LLM
 8. Generate grounded AI responses
 
-⸻
 
-Tech Stack
+## Tech Stack
 
 Component	Technology
 Core Runtime	Python
@@ -70,64 +56,39 @@ PDF Parsing	PyPDF2
 HTTP Requests	Requests
 Environment Handling	python-dotenv
 
-⸻
 
-How to Run the Project
+## How to Run the Project
 
-Clone the Repository
+*Clone the github repository*
+bash
+git clone <PASTE YOUR GITHUB REPO LINK HERE>
 
-git clone <YOUR_GITHUB_REPOSITORY_LINK>
 
-⸻
+*Go inside the project folder*
+bash
+cd <YOUR REPO FOLDER NAME>
 
-Navigate to the Project Directory
 
-cd <YOUR_PROJECT_FOLDER_NAME>
-
-⸻
-
-Install Required Dependencies
-
+*Install all required python packages*
+bash
 pip install streamlit requests chromadb PyPDF2 python-dotenv
 
-⸻
 
-Configure NVIDIA API Key
-
-Create a .env file inside the project directory and add:
-
+*Create a file to store your nvidia api key (.env) & add your nvidia api key to the .env file*
+bash
 NVIDIA_API_KEY=nvapi-xxxxxxxxxxxxxxxx
 
-⸻
 
-Run the Streamlit Application
 
+*Run the streamlit application* 
+bash
 streamlit run main.py
 
-⸻
 
-Important Notes
+## Important Notes:
+  - The vector database is created locally on your system
+  - You can upload multiple files and the chatbot will answer using all of them
+  - To reset everything, delete the chroma folder or use the clear option if available
 
-* Vector embeddings are stored locally on the system
-* Multiple document uploads are supported
-* The chatbot retrieves answers from all uploaded files
-* To reset the vector database, delete the chroma/ folder
-* Session history is maintained during runtime
 
-⸻
 
-Future Enhancements
-
-* Hybrid search (semantic + keyword retrieval)
-* GPU-accelerated local inference
-* Role-based authentication
-* Persistent cloud vector storage
-* Multi-model LLM routing
-* Advanced reranking pipelines
-* Real-time document synchronization
-
-⸻
-
-Project Objective
-
-EcoSphere Intelligence demonstrates how modern RAG pipelines can be used to create reliable, scalable, and enterprise-ready AI assistants capable of interacting with private knowledge ecosystems efficiently and securely.
