@@ -30,7 +30,7 @@ Traditional financial and economic reports are often:
   
 Users may struggle to:
 
-*identify important economic insights
+* identify important economic insights
 * understand inflation trends
 * analyze market sentiment
 * extract key information from large reports.
