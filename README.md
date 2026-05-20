@@ -22,11 +22,13 @@ This makes the chatbot:
 ## Problem Statement
 
 Traditional financial and economic reports are often:
+
 ● lengthy
 ● difficult to analyze quickly
 ● filled with technical data
 ● time consuming to interpret manually
 Users may struggle to:
+
 ● identify important economic insights
 ● understand inflation trends
 ● analyze market sentiment
@@ -36,11 +38,11 @@ Users may struggle to:
 
 To build an AI-powered Economic News Intelligence System using RAG (Retrieval Augmented
 Generation) that can:
-✔ analyze uploaded economic reports and financial news
-✔ retrieve relevant information from documents
-✔ generate summarized economic insights
-✔ identify inflation trends and sentiment
-✔ provide contextual answers to user queries in natural language
+* ✔analyze uploaded economic reports and financial news
+* ✔retrieve relevant information from documents
+* ✔generate summarized economic insights
+* ✔ identify inflation trends and sentiment
+* ✔ provide contextual answers to user queries in natural language
 
 ## Tech Stack
 
