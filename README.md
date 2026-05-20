@@ -59,30 +59,29 @@ Environment Handling	python-dotenv
 
 ## How to Run the Project
 
-*Clone the github repository*
-bash
+Clone the github repository
+Bash
 git clone <PASTE YOUR GITHUB REPO LINK HERE>
 
 
-*Go inside the project folder*
-bash
+Go inside the project folder
+Bash
 cd <YOUR REPO FOLDER NAME>
 
 
-*Install all required python packages*
-bash
+Install all required python packages
+Bash
 pip install streamlit requests chromadb PyPDF2 python-dotenv
 
 
-*Create a file to store your nvidia api key (.env) & add your nvidia api key to the .env file*
-bash
+Create a file to store your nvidia api key (.env) & add your nvidia api key to the .env file
+Bash
 NVIDIA_API_KEY=nvapi-xxxxxxxxxxxxxxxx
 
 
-
-*Run the streamlit application* 
-bash
+Run the streamlit application ```bash
 streamlit run main.py
+
 
 
 ## Important Notes:
