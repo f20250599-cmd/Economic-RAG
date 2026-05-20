@@ -4,7 +4,7 @@ Organized by: ACM-W
 This repository contains the production-ready implementation used in the ACM-W workshop “Build Your First AI Chatbot: RAG with NVIDIA”.
 EcoSphere Intelligence is an advanced Retrieval-Augmented Generation (RAG) framework engineered to architect precision retrieval and eliminate hallucinations across complex, fragmented data ecosystems. It bridges the gap between static LLM knowledge weights and dynamic enterprise data pipelines.
 
-#Basics of RAG (Retrieval-Augmented Generation)
+##Basics of RAG (Retrieval-Augmented Generation)
 
 RAG is an architectural pattern that synchronizes semantic document retrieval with autoregressive text generation.
 Rather than relying solely on parametric memory (pre-trained data), a RAG system orchestration pipeline:
@@ -17,7 +17,7 @@ Grounded Responses: Maximized empirical accuracy by constraining the LLM generat
 Mitigated Hallucinations: Verifiable outputs tied directly to source documentation.
 Data Privacy & Agility: Direct processing of private PDFs and runtime knowledge updates without expensive model fine-tuning.
 
-#Technical Features & System Capabilities
+##Technical Features & System Capabilities
 
 Multi-Format Ingestion Engine: Concurrent, asynchronous processing of unstructured text (TXT) and structured binaries (PDF) via a unified UI entry point.
 Granular Token Optimization: Automated document segmentation utilizing a custom chunk_text function set at a strict threshold of 150 tokens to preserve semantic density and eliminate context-window dilution.
