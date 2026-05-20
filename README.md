@@ -39,11 +39,11 @@ Users may struggle to:
 
 To build an AI-powered Economic News Intelligence System using RAG (Retrieval Augmented
 Generation) that can:
-* ✔analyze uploaded economic reports and financial news
-* ✔retrieve relevant information from documents
-* ✔generate summarized economic insights
-* ✔ identify inflation trends and sentiment
-* ✔ provide contextual answers to user queries in natural language
+* analyze uploaded economic reports and financial news
+* retrieve relevant information from documents
+* generate summarized economic insights
+*  identify inflation trends and sentiment
+*  provide contextual answers to user queries in natural language
 
 ## Tech Stack
 
