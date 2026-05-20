@@ -19,67 +19,62 @@ This makes the chatbot:
 - Able to answer from private PDFs and documents  
 - Easy to update without retraining the model
 
+## Problem Statement
 
-## Technical Features & System Capabilities
+Traditional financial and economic reports are often:
+● lengthy
+● difficult to analyze quickly
+● filled with technical data
+● time consuming to interpret manually
+Users may struggle to:
+● identify important economic insights
+● understand inflation trends
+● analyze market sentiment
+● extract key information from large reports.
 
-* Multi-format document ingestion (TXT & PDF)
-* Semantic chunking pipeline with optimized token segmentation
-* NVIDIA-powered embedding generation
-* ChromaDB vector storage for fast similarity search
-* Context-aware response generation
-* Stateful Streamlit chat session management
-* Multi-turn conversational memory
-* Local vector database persistence
-* Retrieval-first response architecture
+## Project Goal
 
-
-## System Workflow
-
-1. Upload documents (TXT/PDF)
-2. Extract and split document text into chunks
-3. Generate embeddings using NVIDIA NIM APIs
-4. Store embeddings inside ChromaDB
-5. Perform semantic similarity search for user queries
-6. Retrieve top-k relevant chunks
-7. Send retrieved context to the LLM
-8. Generate grounded AI responses
-
+To build an AI-powered Economic News Intelligence System using RAG (Retrieval Augmented
+Generation) that can:
+✔ analyze uploaded economic reports and financial news
+✔ retrieve relevant information from documents
+✔ generate summarized economic insights
+✔ identify inflation trends and sentiment
+✔ provide contextual answers to user queries in natural language
 
 ## Tech Stack
 
-Component	Technology
-Core Runtime	Python
-UI Framework	Streamlit
-Vector Database	ChromaDB
-Embeddings & Inference	NVIDIA NIM API
-PDF Parsing	PyPDF2
-HTTP Requests	Requests
-Environment Handling	python-dotenv
-
+* Core Runtime: Python
+* UI Architecture: Streamlit
+* Vector Storage Engine: ChromaDB
+* LLM & Embeddings: NVIDIA NIM API
+* Parsing Utilities: PyPDF2 & Requests
+* Environment Management: python-dotenv
 
 ## How to Run the Project
 
 Clone the github repository
-Bash
+bash
 git clone <PASTE YOUR GITHUB REPO LINK HERE>
 
 
 Go inside the project folder
-Bash
+bash
 cd <YOUR REPO FOLDER NAME>
 
 
 Install all required python packages
-Bash
+bash
 pip install streamlit requests chromadb PyPDF2 python-dotenv
 
 
 Create a file to store your nvidia api key (.env) & add your nvidia api key to the .env file
-Bash
+bash
 NVIDIA_API_KEY=nvapi-xxxxxxxxxxxxxxxx
 
 
-Run the streamlit application ```bash
+Run the streamlit application 
+bash
 streamlit run main.py
 
 
