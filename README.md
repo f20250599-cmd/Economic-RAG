@@ -23,16 +23,17 @@ This makes the chatbot:
 
 Traditional financial and economic reports are often:
 
-● lengthy
-● difficult to analyze quickly
-● filled with technical data
-● time consuming to interpret manually
+* lengthy
+* difficult to analyze quickly
+* filled with technical data
+* time consuming to interpret manually
+  
 Users may struggle to:
 
-● identify important economic insights
-● understand inflation trends
-● analyze market sentiment
-● extract key information from large reports.
+*identify important economic insights
+* understand inflation trends
+* analyze market sentiment
+* extract key information from large reports.
 
 ## Project Goal
 
