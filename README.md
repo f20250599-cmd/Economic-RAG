@@ -1,1 +1,1 @@
-# Economic-RAG
+# EcoSphere Intelligence: RAG Driven Framework
