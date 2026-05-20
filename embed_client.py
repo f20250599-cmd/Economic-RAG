@@ -1,7 +1,7 @@
 # embed_client.py
 import os
 import requests
-from dotenv import load_dotenv
+from dotenv import load_dotenv 
 
 # Load NVIDIA_API_KEY from .env file
 load_dotenv()
