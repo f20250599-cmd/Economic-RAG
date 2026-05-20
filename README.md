@@ -1,12 +1,11 @@
 # EcoSphere Intelligence: RAG Driven Framework
 EcoSphere Intelligence: RAG-Driven Framework
 Organized by: ACM-W
-This repository contains the production-ready implementation used in the ACM-W workshop “Build Your First AI Chatbot: RAG with NVIDIA”.
 EcoSphere Intelligence is an advanced Retrieval-Augmented Generation (RAG) framework engineered to architect precision retrieval and eliminate hallucinations across complex, fragmented data ecosystems. It bridges the gap between static LLM knowledge weights and dynamic enterprise data pipelines.
 
 ##Basics of RAG (Retrieval-Augmented Generation)
 
-RAG is an architectural pattern that synchronizes semantic document retrieval with autoregressive text generation.
+RAG is an architectural pattern that synchronizes semantic *document retrieval*  with *autoregressive text generation*.
 Rather than relying solely on parametric memory (pre-trained data), a RAG system orchestration pipeline:
 Dynamically queries and retrieves top-$k$ relevant context blocks from ingested local documents based on semantic vector similarity.
 Injects these blocks into the LLM prompt payload to anchor responses in source-of-truth verification.
@@ -71,7 +70,7 @@ streamlit run main.py
 
 ---
 
-## Evaluator Notes:
+## Important Notes:
   - **Local Persistence**: The vector database indices are initialized and cached locally on your machine, eliminating external cloud data dependencies.
   - **Cross-Document Synthesis**: The framework executes global queries, allowing the retrieval mechanism to synthesize information simultaneously across multiple separate source documents.
   - **Index Cache Invalidation**: To reset the knowledge base or clear out memory leaks, simply delete the local Chroma storage folder to re-initialize the indexing pipeline.
